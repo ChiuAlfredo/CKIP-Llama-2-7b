@@ -28,7 +28,7 @@ torchrun --nproc_per_node 1 $BELLE_DIR/train/src/entry_point/sft_train.py \
     --per_device_eval_batch_size 4 \
     --gradient_accumulation_steps 2 \
     --num_train_epochs 2 \
-    --model_max_length ${cutoff_len} \
+    --model_max_length 4096 \
     --save_strategy "steps" \
     --save_total_limit 3 \
     --learning_rate 8e-6 \
