@@ -1,7 +1,7 @@
 #!/bin/bash
 output_dir="outputs" # output file
-train_file="data/data.json" # training file
-validation_file="data/sample_validation.jsonl" # validation file
+train_file="CKIP-Llama-2-7b/data/sample_train.jsonl" # training file
+validation_file="CKIP-Llama-2-7b/data/sample_validation.jsonl" # validation file
 export BELLE_DIR="./BELLE"
 model_name_or_path="ckiplab/CKIP-Llama-2-7b" # or ckiplab/CKIP-Llama-2-7b-chat
 cache_dir="hf_cache_dir"
