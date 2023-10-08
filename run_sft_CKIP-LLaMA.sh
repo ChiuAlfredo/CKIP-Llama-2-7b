@@ -20,7 +20,7 @@ torchrun --nproc_per_node 1 $BELLE_DIR/train/src/entry_point/sft_train.py \
     --llama \
     --ddp_timeout 36000 \
     --model_name_or_path ${model_name_or_path} \
-    --deepspeed $BELLE_DIR/train/configs/deepspeed_config.json \
+    --deepspeed $BELLE_DIR/train/configs/deepspeed_config_stage3.json \
     --train_file ${train_file} \
     --validation_file ${validation_file} \
     --per_device_train_batch_size 8 \
