@@ -44,7 +44,7 @@ torchrun --nproc_per_node 1 $BELLE_DIR/train/src/entry_point/sft_train.py \
     --output_dir ${output_dir} \
     --overwrite_output_dir \
     --use_flash_attention \
-    --deepspeed $BELLE_DIR/train/configs/vdeepspeed_config_stage3.json\
+    --deepspeed $BELLE_DIR/train/configs/deepspeed_config_stage3.json\
 
 
     
