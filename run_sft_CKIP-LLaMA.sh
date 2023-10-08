@@ -23,11 +23,11 @@ torchrun --nproc_per_node 1 $BELLE_DIR/train/src/entry_point/sft_train.py \
     --deepspeed $BELLE_DIR/train/configs/deepspeed_config_stage3.json \
     --train_file ${train_file} \
     --validation_file ${validation_file} \
-    --per_device_train_batch_size 8 \
-    --per_device_eval_batch_size 8 \
+    --per_device_train_batch_size 4 \
+    --per_device_eval_batch_size 4 \
     --gradient_accumulation_steps 2 \
     --num_train_epochs 2 \
-    --model_max_length 4096 \
+    --model_max_length 2048 \
     --save_total_limit 10 \
     --save_strategy "steps" \
     --evaluation_strategy "steps" \
