@@ -16,7 +16,7 @@ export WANDB_PROJECT="CKIP-Llama"
 export PYTHONPATH="$BELLE_DIR/train"
 
 # FT
-torchrun --nproc_per_node 4 $BELLE_DIR/train/src/entry_point/sft_train.py \
+torchrun --nproc_per_node 1 $BELLE_DIR/train/src/entry_point/sft_train.py \
     --llama \
     --ddp_timeout 36000 \
     --model_name_or_path ${model_name_or_path} \
